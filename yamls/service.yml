@@ -8,8 +8,8 @@ metadata:
   
 spec:
   selector: 
-	app: hello-world
+    app: hello-world
   type: NodePort  # use LoadBalancer as type here
   ports:
-    - port: 9000
-      targetPort: 9000
+    - port: 8084
+      targetPort: 8084
