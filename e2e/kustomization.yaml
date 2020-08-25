@@ -7,7 +7,7 @@ bases:
 patchesStrategicMerge:
 - ./deployment-patch.yaml
 
-images:
+image:
 - name: helloworld
   newName: gcr.io/cybage-devops/spring-boot-hello-world
   newTag: latest
