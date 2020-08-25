@@ -8,5 +8,6 @@ patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
-- name: helloworld
-  newName: gcr.io/cybage-devops/spring-boot-hello-world:${env.GIT_COMMIT}
+- name: gcr.io/cybage-devops/spring-boot-hello-world
+  newName: gcr.io/cybage-devops/spring-boot-hello-world
+  newTag: ${env.GIT_COMMIT}
