@@ -8,5 +8,6 @@ patchesStrategicMerge:
 - ./deployment-patch.yaml
 
 images:
-- name: gcr.io/cybage-devops/spring-boot-hello-world
+- name: helloworld
+  newName: gcr.io/cybage-devops/spring-boot-hello-world
   newTag: 2
