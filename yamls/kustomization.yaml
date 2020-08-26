@@ -4,3 +4,11 @@ kind: Kustomization
 resources:
 - ./deployment.yaml
 - ./deployment-patch.yaml
+
+patchesStrategicMerge:
+- ./deployment-patch.yaml
+
+images:
+- name: helloworld
+  newName: gcr.io/cybage-devops/spring-boot-hello-world
+  newTag: $BUILD_NUMBER
