@@ -7,6 +7,7 @@ spec:
     spec:
       containers:
       - name: hello-world
+        image: "gcr.io/cybage-devops/spring-boot-hello-world:$BUILD_NUMBER"
         env:
         - name: ENVIRONMENT
           value: e2e
