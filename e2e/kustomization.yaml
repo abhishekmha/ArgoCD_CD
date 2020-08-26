@@ -9,4 +9,4 @@ patchesStrategicMerge:
 
 images:
 - name: gcr.io/cybage-devops/spring-boot-hello-world
-  newTag: latest
+  newTag: 52
