@@ -1,8 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
-bases:
-- ../yamls
 
 patchesStrategicMerge:
 - deployment-patch.yaml
+resources:
+- ../yamls
+images:
+- name: gcr.io/cybage-devops/spring-boot-hello-world
+  newName: gcr.io/cybage-devops/spring-boot-hello-world
+  newTag: "3"
